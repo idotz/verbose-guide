@@ -30,7 +30,7 @@ jobs:
     - name: test
       run: |
         echo ${{ matrix.version }}
-        sudo apt-get update && sudo apt-get -y install libsoup3.0-0 woff2 libvpx7 libevent-2.1-7 libopus0 libharfbuzz-icu0 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgst-plugins-bad1.0-0 libgst-plugins-good1.0-0 libgst-plugins-ugly1.0-0 libgst-plugins-base1.0-0 libgst-plugins-base1.0-dev libgst-plugins-base1.0-doc libgst-plugins-base1.0-tools libgst-plugins-base1.0-dev libgst-plugins-base1.0-doc libgst-plugins-base1.0-tools libhyphen0 libmanette0.2-0 libflite1 libflite-usenglish libflite-cmu-grapheme-lang libflite-cmu-grapheme-lex libflite-cmu-indic-lang libflite-cmu-indic-lex libflite-cmulex libflite-cmu-time-awb libflite-cmu-us-awb libflite-cmu-us-kal16 libflite-cmu-us-kal libflite-cmu-us-rms libflite-cmu-us-slt libgles2 libx264-155
+        sudo npx playwright install webkit --with-deps
         npm ci
         npx playwright install
         xvfb-run node index.js
