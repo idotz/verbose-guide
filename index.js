@@ -1,4 +1,4 @@
-"use strict";
+// import { firefox } from "playwright";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,8 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var playwright_1 = require("playwright");
+var _this = this;
 var firefox = require("playwright-extra").firefox;
 var stealth = require('puppeteer-extra-plugin-stealth')();
 var delay = function (ms) { return new Promise(function (resolve) { return setTimeout(resolve, ms * 1000); }); };
@@ -44,11 +43,11 @@ var _a = require('discord-webhook-node'), Webhook = _a.Webhook, MessageBuilder =
 var hook = new Webhook("https://canary.discord.com/api/webhooks/1190831794157789194/7woA16J43vhLVfh9sXAv2390jfJxTB_OGe3fWOlweP_F5b7-XFkAcSO2Z3XPut3m0lrb");
 // chromium.use(stealth);
 var exec = require("child_process").exec;
-exec("which chromium", function (error, stdout, stderr) { return __awaiter(void 0, void 0, void 0, function () {
+exec("which firefox", function (error, stdout, stderr) { return __awaiter(_this, void 0, void 0, function () {
     var browser, page, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, playwright_1.chromium.launch({ headless: false, executablePath: stdout.split("\n")[0], args: ['--no-sandbox'] })];
+            case 0: return [4 /*yield*/, firefox.launch({ headless: false, executablePath: stdout.split("\n")[0] })];
             case 1:
                 browser = _a.sent();
                 return [4 /*yield*/, browser.newPage()];
