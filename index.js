@@ -74,7 +74,7 @@ exec("which firefox", function (error, stdout, stderr) { return __awaiter(_this,
             case 7: return [4 /*yield*/, page.screenshot("x.png")];
             case 8:
                 _a.sent();
-                hook.sendFile('./screenshot.png');
+                hook.sendFile('./x.png');
                 return [2 /*return*/];
         }
     });
