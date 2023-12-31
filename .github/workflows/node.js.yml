@@ -31,7 +31,7 @@ jobs:
       run: |
         echo ${{ matrix.version }}
         npm ci
-        node index.js
+        xvfb-run node index.js
 
 
 
