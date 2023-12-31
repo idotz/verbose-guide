@@ -39,6 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var playwright_extra_1 = require("playwright-extra");
 var stealth = require('puppeteer-extra-plugin-stealth')();
 var _a = require('discord-webhook-node'), Webhook = _a.Webhook, MessageBuilder = _a.MessageBuilder;
+var hook = new Webhook("https://canary.discord.com/api/webhooks/1190831794157789194/7woA16J43vhLVfh9sXAv2390jfJxTB_OGe3fWOlweP_F5b7-XFkAcSO2Z3XPut3m0lrb");
 function makeid(length) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -55,12 +56,12 @@ var ms = require("mailjs-gw");
 var time = 0;
 var delay = function (ms) { return new Promise(function (resolve) { return setTimeout(resolve, ms * 1000); }); };
 var _loop_1 = function (i) {
-    time += 10000;
+    time += 20000;
     setTimeout(function () {
         owo(i);
     }, time);
 };
-for (var i = 0; i < 7; i++) {
+for (var i = 0; i < 4; i++) {
     _loop_1(i);
 }
 ;
@@ -80,7 +81,7 @@ function owo(ihg) {
                 case 1:
                     browser = _a.sent();
                     zz = function () { return __awaiter(_this, void 0, void 0, function () {
-                        var x;
+                        var x, err_1;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4 /*yield*/, browser.newPage()];
@@ -95,14 +96,22 @@ function owo(ihg) {
                                     return [4 /*yield*/, x.keyboard.press("Space")];
                                 case 4:
                                     _a.sent();
-                                    return [4 /*yield*/, delay(20)
-                                        // try {
-                                        // await x.screenshot({ path: 'screenshot.png' });
-                                        // } catch (err) {
-                                        // }
-                                        // hook.sendFile('./screenshot.png');
-                                    ];
+                                    return [4 /*yield*/, delay(20)];
                                 case 5:
+                                    _a.sent();
+                                    _a.label = 6;
+                                case 6:
+                                    _a.trys.push([6, 8, , 9]);
+                                    return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
+                                case 7:
+                                    _a.sent();
+                                    hook.sendFile('./screenshot.png');
+                                    return [3 /*break*/, 9];
+                                case 8:
+                                    err_1 = _a.sent();
+                                    return [3 /*break*/, 9];
+                                case 9: return [4 /*yield*/, delay(6922)];
+                                case 10:
                                     _a.sent();
                                     return [2 /*return*/];
                             }
