@@ -85,7 +85,7 @@ function owo(ihg) {
                 case 1:
                     emil = _a.sent();
                     folderid = makeid(14);
-                    return [4 /*yield*/, playwright_extra_1.firefox.launch({
+                    return [4 /*yield*/, playwright_extra_1.webkit.launch({
                             headless: false,
                         })];
                 case 2:
