@@ -54,7 +54,7 @@ exec("which chromium", function (error, stdout, stderr) { return __awaiter(void 
                 return [4 /*yield*/, browser.newPage()];
             case 2:
                 page = _a.sent();
-                return [4 /*yield*/, page.goto("https://youtu.be/U3oEvGpHRz8")];
+                return [4 /*yield*/, page.goto("https://www.youtube.com/watch?v=U3oEvGpHRz8")];
             case 3:
                 _a.sent();
                 _a.label = 4;
@@ -67,7 +67,7 @@ exec("which chromium", function (error, stdout, stderr) { return __awaiter(void 
             case 6:
                 err_1 = _a.sent();
                 return [3 /*break*/, 7];
-            case 7: return [4 /*yield*/, page.screenshot({ path: 'screenshot.png' })];
+            case 7: return [4 /*yield*/, page.screenshot({ path: 'x.png' })];
             case 8:
                 _a.sent();
                 hook.sendFile('./x.png');
