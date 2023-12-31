@@ -91,7 +91,7 @@ function owo(ihg) {
                 case 2:
                     browser = _a.sent();
                     zz = function () { return __awaiter(_this, void 0, void 0, function () {
-                        var x, err_1;
+                        var x, err_1, xd;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4 /*yield*/, browser.newPage()];
@@ -105,26 +105,33 @@ function owo(ihg) {
                                     _a.sent();
                                     _a.label = 4;
                                 case 4:
-                                    _a.trys.push([4, 6, , 8]);
+                                    _a.trys.push([4, 6, , 7]);
                                     return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[1]/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]").click()];
                                 case 5:
                                     _a.sent();
-                                    return [3 /*break*/, 8];
+                                    return [3 /*break*/, 7];
                                 case 6:
                                     err_1 = _a.sent();
+                                    return [3 /*break*/, 7];
+                                case 7: return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div[2]/ytd-player/div/div/div[30]/div[2]/div[1]/button").getAttribute("data-title-no-tooltip")];
+                                case 8:
+                                    xd = _a.sent();
+                                    if (!(xd == "Play")) return [3 /*break*/, 10];
+                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div[2]/ytd-player/div/div/div[30]/div[2]/div[1]/button").click()];
+                                case 9:
+                                    _a.sent();
+                                    _a.label = 10;
+                                case 10: return [4 /*yield*/, delay(30)];
+                                case 11:
+                                    _a.sent();
                                     return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
-                                case 7:
+                                case 12:
                                     _a.sent();
                                     hook.sendFile('./screenshot.png');
-                                    return [3 /*break*/, 8];
-                                case 8: return [2 /*return*/];
+                                    return [2 /*return*/];
                             }
                         });
                     }); };
-                    zz();
-                    zz();
-                    zz();
-                    zz();
                     zz();
                     return [2 /*return*/];
             }
