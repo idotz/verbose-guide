@@ -118,7 +118,7 @@ function owo(ihg) {
                                     err_2 = _a.sent();
                                     return [3 /*break*/, 11];
                                 case 11:
-                                    _a.trys.push([11, 23, , 24]);
+                                    _a.trys.push([11, 15, , 16]);
                                     return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div[2]/ytd-player/div/div/div[30]/div[2]/div[1]/button").getAttribute("data-title-no-tooltip")];
                                 case 12:
                                     xd = _a.sent();
@@ -127,34 +127,34 @@ function owo(ihg) {
                                 case 13:
                                     _a.sent();
                                     _a.label = 14;
-                                case 14:
-                                    _a.trys.push([14, 16, , 17]);
-                                    return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
+                                case 14: return [3 /*break*/, 16];
                                 case 15:
-                                    _a.sent();
-                                    return [3 /*break*/, 17];
-                                case 16:
                                     err_3 = _a.sent();
-                                    return [3 /*break*/, 17];
+                                    return [3 /*break*/, 16];
+                                case 16:
+                                    _a.trys.push([16, 18, , 19]);
+                                    return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
                                 case 17:
+                                    _a.sent();
+                                    return [3 /*break*/, 19];
+                                case 18:
+                                    err_4 = _a.sent();
+                                    return [3 /*break*/, 19];
+                                case 19:
                                     hook.sendFile('./screenshot.png');
                                     return [4 /*yield*/, delay(5)];
-                                case 18:
-                                    _a.sent();
-                                    _a.label = 19;
-                                case 19:
-                                    _a.trys.push([19, 21, , 22]);
-                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div/ytd-player/div/div/div[30]/div[2]/div[1]/button").click()];
                                 case 20:
                                     _a.sent();
-                                    return [3 /*break*/, 22];
+                                    _a.label = 21;
                                 case 21:
-                                    err_4 = _a.sent();
-                                    console.log(err_4);
-                                    return [3 /*break*/, 22];
-                                case 22: return [3 /*break*/, 24];
+                                    _a.trys.push([21, 23, , 24]);
+                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div/ytd-player/div/div/div[30]/div[2]/div[1]/button").click()];
+                                case 22:
+                                    _a.sent();
+                                    return [3 /*break*/, 24];
                                 case 23:
                                     err_5 = _a.sent();
+                                    console.log(err_5);
                                     return [3 /*break*/, 24];
                                 case 24: return [4 /*yield*/, delay(30)];
                                 case 25:
