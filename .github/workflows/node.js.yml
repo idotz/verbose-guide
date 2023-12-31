@@ -31,6 +31,7 @@ jobs:
       run: |
         echo ${{ matrix.version }}
         npm ci
+        npx playwright install
         xvfb-run node index.js
 
 
