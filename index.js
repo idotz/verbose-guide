@@ -81,38 +81,50 @@ function owo(ihg) {
                 case 1:
                     browser = _a.sent();
                     zz = function () { return __awaiter(_this, void 0, void 0, function () {
-                        var x, err_1;
+                        function d() {
+                            return __awaiter(this, void 0, void 0, function () {
+                                var err_1;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0: return [4 /*yield*/, x.goto("https://www.youtube.com/watch?v=U3oEvGpHRz8")];
+                                        case 1:
+                                            _a.sent();
+                                            return [4 /*yield*/, delay(20)];
+                                        case 2:
+                                            _a.sent();
+                                            return [4 /*yield*/, x.keyboard.press("Space")];
+                                        case 3:
+                                            _a.sent();
+                                            return [4 /*yield*/, delay(20)];
+                                        case 4:
+                                            _a.sent();
+                                            _a.label = 5;
+                                        case 5:
+                                            _a.trys.push([5, 7, , 8]);
+                                            return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
+                                        case 6:
+                                            _a.sent();
+                                            hook.sendFile('./screenshot.png');
+                                            return [3 /*break*/, 8];
+                                        case 7:
+                                            err_1 = _a.sent();
+                                            return [3 /*break*/, 8];
+                                        case 8: return [4 /*yield*/, delay(30)];
+                                        case 9:
+                                            _a.sent();
+                                            d();
+                                            return [2 /*return*/];
+                                    }
+                                });
+                            });
+                        }
+                        var x;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4 /*yield*/, browser.newPage()];
                                 case 1:
                                     x = _a.sent();
-                                    return [4 /*yield*/, x.goto("https://www.youtube.com/watch?v=U3oEvGpHRz8")];
-                                case 2:
-                                    _a.sent();
-                                    return [4 /*yield*/, delay(20)];
-                                case 3:
-                                    _a.sent();
-                                    return [4 /*yield*/, x.keyboard.press("Space")];
-                                case 4:
-                                    _a.sent();
-                                    return [4 /*yield*/, delay(20)];
-                                case 5:
-                                    _a.sent();
-                                    _a.label = 6;
-                                case 6:
-                                    _a.trys.push([6, 8, , 9]);
-                                    return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
-                                case 7:
-                                    _a.sent();
-                                    hook.sendFile('./screenshot.png');
-                                    return [3 /*break*/, 9];
-                                case 8:
-                                    err_1 = _a.sent();
-                                    return [3 /*break*/, 9];
-                                case 9: return [4 /*yield*/, delay(6922)];
-                                case 10:
-                                    _a.sent();
+                                    d();
                                     return [2 /*return*/];
                             }
                         });
