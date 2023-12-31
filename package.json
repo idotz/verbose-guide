@@ -14,6 +14,7 @@
     "@playwright/test": "^1.40.0",
     "@types/node": "^20.9.4",
     "axios": "^1.6.2",
+    "discord-webhook-node": "^1.1.8",
     "fastify": "^4.24.3",
     "mailjs-gw": "^2.0.2",
     "playwright": "^1.40.0",
