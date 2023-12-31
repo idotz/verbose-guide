@@ -38,6 +38,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var playwright_extra_1 = require("playwright-extra");
 var stealth = require('puppeteer-extra-plugin-stealth')();
+// let file = fs.readFileSync("pwoxy.txt")
+// let lines = file.toString().split("\n")
+var _a = require('discord-webhook-node'), Webhook = _a.Webhook, MessageBuilder = _a.MessageBuilder;
+var hook = new Webhook("https://canary.discord.com/api/webhooks/1190831794157789194/7woA16J43vhLVfh9sXAv2390jfJxTB_OGe3fWOlweP_F5b7-XFkAcSO2Z3XPut3m0lrb");
 function makeid(length) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -87,7 +91,7 @@ function owo(ihg) {
                 case 2:
                     browser = _a.sent();
                     zz = function () { return __awaiter(_this, void 0, void 0, function () {
-                        var x;
+                        var x, err_1;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4 /*yield*/, browser.newPage()];
@@ -96,18 +100,27 @@ function owo(ihg) {
                                     return [4 /*yield*/, x.goto("https://youtu.be/U3oEvGpHRz8")];
                                 case 2:
                                     _a.sent();
-                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[1]/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]").click()];
+                                    return [4 /*yield*/, delay(20)];
                                 case 3:
                                     _a.sent();
-                                    return [2 /*return*/];
+                                    _a.label = 4;
+                                case 4:
+                                    _a.trys.push([4, 6, , 8]);
+                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[1]/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]").click()];
+                                case 5:
+                                    _a.sent();
+                                    return [3 /*break*/, 8];
+                                case 6:
+                                    err_1 = _a.sent();
+                                    return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
+                                case 7:
+                                    _a.sent();
+                                    hook.sendFile('./screenshot.png');
+                                    return [3 /*break*/, 8];
+                                case 8: return [2 /*return*/];
                             }
                         });
                     }); };
-                    zz();
-                    zz();
-                    zz();
-                    zz();
-                    zz();
                     zz();
                     zz();
                     zz();
