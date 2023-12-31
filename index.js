@@ -38,7 +38,6 @@ var _this = this;
 var firefox = require("playwright-extra").firefox;
 var stealth = require('puppeteer-extra-plugin-stealth')();
 var delay = function (ms) { return new Promise(function (resolve) { return setTimeout(resolve, ms * 1000); }); };
-var express = require("express"); // chromium.use(stealth)
 var _a = require('discord-webhook-node'), Webhook = _a.Webhook, MessageBuilder = _a.MessageBuilder;
 var hook = new Webhook("https://canary.discord.com/api/webhooks/1190831794157789194/7woA16J43vhLVfh9sXAv2390jfJxTB_OGe3fWOlweP_F5b7-XFkAcSO2Z3XPut3m0lrb");
 // chromium.use(stealth);
