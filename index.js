@@ -61,7 +61,7 @@ var _loop_1 = function (i) {
         owo(i);
     }, time);
 };
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < 1; i++) {
     _loop_1(i);
 }
 ;
@@ -75,7 +75,7 @@ function owo(ihg) {
                     console.log(ihg);
                     mailjs = new ms();
                     folderid = makeid(14);
-                    return [4 /*yield*/, playwright_extra_1.firefox.launchPersistentContext("woof" + makeid(10), {
+                    return [4 /*yield*/, playwright_extra_1.firefox.launch({
                             headless: false,
                         })];
                 case 1:
