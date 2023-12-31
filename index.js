@@ -91,7 +91,7 @@ function owo(ihg) {
                 case 2:
                     browser = _a.sent();
                     zz = function () { return __awaiter(_this, void 0, void 0, function () {
-                        var x, err_1, xd;
+                        var x, err_1, xd, err_2;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0: return [4 /*yield*/, browser.newPage()];
@@ -113,7 +113,9 @@ function owo(ihg) {
                                 case 6:
                                     err_1 = _a.sent();
                                     return [3 /*break*/, 7];
-                                case 7: return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div[2]/ytd-player/div/div/div[30]/div[2]/div[1]/button").getAttribute("data-title-no-tooltip")];
+                                case 7:
+                                    _a.trys.push([7, 11, , 12]);
+                                    return [4 /*yield*/, x.locator("xpath=/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div[2]/ytd-player/div/div/div[30]/div[2]/div[1]/button").getAttribute("data-title-no-tooltip")];
                                 case 8:
                                     xd = _a.sent();
                                     if (!(xd == "Play")) return [3 /*break*/, 10];
@@ -121,11 +123,15 @@ function owo(ihg) {
                                 case 9:
                                     _a.sent();
                                     _a.label = 10;
-                                case 10: return [4 /*yield*/, delay(30)];
+                                case 10: return [3 /*break*/, 12];
                                 case 11:
+                                    err_2 = _a.sent();
+                                    return [3 /*break*/, 12];
+                                case 12: return [4 /*yield*/, delay(30)];
+                                case 13:
                                     _a.sent();
                                     return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
-                                case 12:
+                                case 14:
                                     _a.sent();
                                     hook.sendFile('./screenshot.png');
                                     return [2 /*return*/];
