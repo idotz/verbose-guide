@@ -38,8 +38,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var playwright_extra_1 = require("playwright-extra");
 var stealth = require('puppeteer-extra-plugin-stealth')();
-// let file = fs.readFileSync("pwoxy.txt")
-// let lines = file.toString().split("\n")
 var _a = require('discord-webhook-node'), Webhook = _a.Webhook, MessageBuilder = _a.MessageBuilder;
 var hook = new Webhook("https://canary.discord.com/api/webhooks/1190831794157789194/7woA16J43vhLVfh9sXAv2390jfJxTB_OGe3fWOlweP_F5b7-XFkAcSO2Z3XPut3m0lrb");
 function makeid(length) {
@@ -58,12 +56,12 @@ var ms = require("mailjs-gw");
 var time = 0;
 var delay = function (ms) { return new Promise(function (resolve) { return setTimeout(resolve, ms * 1000); }); };
 var _loop_1 = function (i) {
-    time += 1;
+    time += 10000;
     setTimeout(function () {
         owo(i);
     }, time);
 };
-for (var i = 0; i < 1; i++) {
+for (var i = 0; i < 4; i++) {
     _loop_1(i);
 }
 ;
@@ -77,7 +75,7 @@ function owo(ihg) {
                     console.log(ihg);
                     mailjs = new ms();
                     folderid = makeid(14);
-                    return [4 /*yield*/, playwright_extra_1.firefox.launchPersistentContext("woof", {
+                    return [4 /*yield*/, playwright_extra_1.firefox.launchPersistentContext("woof" + makeid(10), {
                             headless: false,
                         })];
                 case 1:
@@ -135,5 +133,3 @@ function owo(ihg) {
         });
     });
 }
-// https://bitbucket.org/workspaces/ybtobdgthlya/avatar/?ts=1698787745
-//https://secure.gravatar.com/avatar/60391a39f09db985663445d220721e7d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FF-5.png
