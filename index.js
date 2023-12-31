@@ -86,7 +86,7 @@ function owo(ihg) {
                                 var err_1;
                                 return __generator(this, function (_a) {
                                     switch (_a.label) {
-                                        case 0: return [4 /*yield*/, x.goto("https://www.youtube.com/watch?v=U3oEvGpHRz8")];
+                                        case 0: return [4 /*yield*/, x.goto("https://www.youtube.com/watch?v=VpStE1cEFqQ")];
                                         case 1:
                                             _a.sent();
                                             return [4 /*yield*/, delay(20)];
@@ -104,7 +104,7 @@ function owo(ihg) {
                                             return [4 /*yield*/, x.screenshot({ path: 'screenshot.png' })];
                                         case 6:
                                             _a.sent();
-                                            hook.sendFile('./screenshot.png');
+                                            // hook.sendFile('./screenshot.png');
                                             return [3 /*break*/, 8];
                                         case 7:
                                             err_1 = _a.sent();
